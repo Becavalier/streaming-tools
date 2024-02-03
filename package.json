@@ -1,0 +1,25 @@
+{
+  "name": "streaming-tools",
+  "version": "1.0.0",
+  "description": "Utilities for streaming platforms.",
+  "main": "main.js",
+  "module": "es2022",
+  "target": "es2022",
+  "scripts": {
+    "build": "tsc ./*.ts --outDir ./bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Becavalier/streaming-tools.git"
+  },
+  "author": "Jason Yu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Becavalier/streaming-tools/issues"
+  },
+  "homepage": "https://github.com/Becavalier/streaming-tools#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "typescript": "^5.3.3"
+  }
+}
