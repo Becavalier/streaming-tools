@@ -11,7 +11,7 @@ const bcc2srtCore = (bccConfig: BCCConfig): SRTConfig => {
         Math.trunc(second / 60),
         Math.trunc(second % 60)
       ].map((num) => { return num.toString().padStart(2, '0'); }).join(':'),
-      (second % 1).toString().slice(2, 5)
+      (second % 1).toFixed(3).toString().slice(2, 5)
     ].join(",")
   }
   return bccConfig.body.reduce((prev, item, index) => {
