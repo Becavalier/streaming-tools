@@ -19,3 +19,9 @@ export interface SRTConfig {
     content: string;
   };
 }
+
+export interface BCUTClip {
+  inPoint: number,
+  outPoint: number, 
+  AssetInfo: Record<string, any>
+}
