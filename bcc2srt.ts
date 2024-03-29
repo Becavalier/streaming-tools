@@ -8,7 +8,7 @@ const bcc2srtCore = (bccConfig: BCCConfig): SRTConfig => {
     return [
       [
         Math.trunc(second / 60 / 60),
-        Math.trunc(second / 60),
+        Math.trunc(second % (60 * 60) / 60),
         Math.trunc(second % 60)
       ].map((num) => { return num.toString().padStart(2, '0'); }).join(':'),
       (second % 1).toFixed(3).toString().slice(2, 5)
